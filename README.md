@@ -26,3 +26,5 @@ disabled_rules:
 - trailing_whitespace
 - line_lengt
 ```
+
+## 3. Running SwiftLint during the Xcode build process
