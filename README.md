@@ -41,3 +41,7 @@ else
   echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
 fi
 ```
+<img width="850" src="https://user-images.githubusercontent.com/47273077/158492442-518dc63c-62d3-4b2e-b7db-f46c3c735e93.png">
+
+
+
