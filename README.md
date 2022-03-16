@@ -28,3 +28,16 @@ disabled_rules:
 ```
 
 ## 3. Running SwiftLint during the Xcode build process
+### Select Build Phases tab (Project settings > App target > Build Phases)
+<img width="1512" src="https://user-images.githubusercontent.com/47273077/158492192-b39209d4-32a8-4c8e-8303-293af3654048.png">
+
+### Click on the “+” button then select “New Run Script Phase”. Name the run script phase “Run SwiftLint” and paste the following code:
+```
+export PATH="$PATH:/opt/homebrew/bin"
+
+if which swiftlint >/dev/null; then
+  swiftlint
+else
+  echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+```
